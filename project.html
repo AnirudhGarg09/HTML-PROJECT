@@ -1,5 +1,4 @@
 /*ANIRUDH GARG 12221947 29*/
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,13 +63,12 @@
     </section>
 
     <script>
-        function xx(event) {
-            event.preventDefault();
+        function xx() {
             alert("Form submitted successfully!");
         }
     </script>
 
-    <form id="jobForm" onsubmit="xx(event)">
+    <form id="jobForm" onsubmit="xx()">
         <h2>Request Your Application</h2>
         <label>
           Full Name:
@@ -83,8 +81,8 @@
         </label><br />
       
         <label>
-          Resume (PDF only):
-          <input type="file" id="resume" accept=".pdf" required />
+          Resume :
+          <input type="file" id="resume" required />
         </label><br />
       
         <p id="formMessage" style="color: red;"></p>
@@ -98,3 +96,4 @@
 </body>
 
 </html>
+
