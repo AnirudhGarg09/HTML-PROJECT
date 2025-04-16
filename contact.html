@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Job Search Portal
+    </title>
+
+    <link rel="stylesheet" href="styleproject.css">
+</head>
+
+<body>
+    <header>
+        <h1>Job Search Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:3000/home.html">Home</a></li>
+            <li><a href="http://127.0.0.1:3000/jobs.html">Jobs</a></li>
+            <li><a href="http://127.0.0.1:3000/companies.html">Companies</a></li>
+            <li><a href="http://127.0.0.1:3000/about.html">About Us</a></li>
+            <li><a href="http://127.0.0.1:3000/contact.html">Apply Now</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function xx() {
+            alert("Form submitted successfully!");
+        }
+    </script>
+
+        <div class="form-container">
+        <form id="jobForm" onsubmit="xx()">
+            <h2>Request Your Application</h2>
+            <label>
+              Full Name:
+              <input type="text" id="name" required />
+            </label><br />
+            
+            <label>
+              Email:
+              <input type="email" id="email" required />
+            </label><br />
+          
+            <label>
+              Resume :
+              <input type="file" id="resume" required />
+            </label><br />
+          
+            <p id="formMessage" style="color: red;"></p>
+            
+            <input type="submit">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Job Search Portal by Anirudh Garg (12221947)</p>
+    </footer>
+</body>
+
+</html>
