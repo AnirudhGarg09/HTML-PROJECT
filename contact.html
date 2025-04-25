@@ -32,29 +32,31 @@
         }
     </script>
 
-        <div class="form-container">
-        <form id="jobForm" onsubmit="xx()">
-            <h2>Request Your Application</h2>
-            <label>
-              Full Name:
-              <input type="text" id="name" required />
-            </label><br />
-            
-            <label>
-              Email:
-              <input type="email" id="email" required />
-            </label><br />
-          
-            <label>
-              Resume :
-              <input type="file" id="resume" required />
-            </label><br />
-          
-            <p id="formMessage" style="color: red;"></p>
-            
-            <input type="submit">
-        </form>
-    </div>
+<div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
+    <form id="jobForm" onsubmit="xx()" style="background: #fff; padding: 30px 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Request Your Application</h2>
+        
+        <label style="display: block; margin-bottom: 15px; font-size: 16px;">
+            Full Name:
+            <input type="text" id="name" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; margin-top: 5px;" />
+        </label>
+        
+        <label style="display: block; margin-bottom: 15px; font-size: 16px;">
+            Email:
+            <input type="email" id="email" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; margin-top: 5px;" />
+        </label>
+        
+        <label style="display: block; margin-bottom: 15px; font-size: 16px;">
+            Resume:
+            <input type="file" id="resume" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; margin-top: 5px;" />
+        </label>
+        
+        <p id="formMessage" style="color: red;"></p>
+        
+        <input type="submit" style="width: 100%; padding: 10px; background: #007BFF; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 10px;" />
+    </form>
+</div>
+
     <footer>
         <p>&copy; 2025 Job Search Portal by Anirudh Garg (12221947)</p>
     </footer>
